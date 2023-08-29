@@ -1,0 +1,90 @@
+<nav>
+    <a href="home"><img src="images/logo7_30.png" alt="logo1"></a>
+    <div class="nav-link" id="Navlink">
+        <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="guide">Guide</a>
+                <div class="submenu-1">
+                    <ul>
+                        <li><a href="guide">Hire a Guide</a></li>
+                        <li><a href="beguide">Be a Guide</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Tour Packages</a></li>
+            <li><a href="travel">Travel</a></li>
+            <li><a href="">Hotel Booking</a></li>
+            <li><a href="about">About</a>
+                <div class="submenu-1">
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li class="about">
+                            <a href="">About Bangladesh</a><i class="fa-solid fa-angle-right"></i>
+                            <div class="submenu-2">
+                                <ul>
+                                    <li><a href="">History</a></li>
+                                    <li><a href="">Map</a></li>
+                                    <li><a href="">Geography</a></li>
+                                    <li><a href="">Weather</a></li>
+                                    <li><a href="">Art & Culture</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="ticket">E-Ticket</a>
+                <div class="submenu-1">
+                    <ul>
+                        <li><a href="https://www.flightexpert.com/" target="_blank">Air Ticket</a></li>
+                        <li><a href="https://eticket.railway.gov.bd/" target="_blank">Train Ticket</a></li>
+                        <li><a href="https://greenlinebd.com/" target="_blank">Bus Ticket</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+    </div>
+  
+    <div  class="login-btn" id="loginBtnDiv">
+        
+    </div>
+
+    <script>
+    const localStorageValue = localStorage.getItem('token');
+    const outputDiv = document.getElementById('loginBtnDiv');
+
+    if (localStorageValue) {
+        const logoutButton = document.createElement('button');
+        logoutButton.textContent = 'Logout';
+        logoutButton.id = 'logoutButton';
+        logoutButton.addEventListener('click', () => {
+            localStorage.removeItem('token');
+            window.location.href = '/login';
+        });
+        outputDiv.innerHTML = '';
+        outputDiv.appendChild(logoutButton);
+    } else {
+        const loginButton = document.createElement('button');
+        loginButton.textContent = 'Login';
+        loginButton.id = 'loginButton';
+        loginButton.addEventListener('click', () => {
+            window.location.href = '/login';
+        });
+        outputDiv.innerHTML = '';
+        outputDiv.appendChild(loginButton);
+    }
+</script>
+
+    <script type="text/x-handlebars-template" id="loginBtnTemplate">
+        
+    </script>
+
+
+    <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+    <!-- Inside your navbar.hbs file -->
+</nav>
+
+
+

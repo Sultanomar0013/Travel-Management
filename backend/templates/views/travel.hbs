@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL HERO</title>
+    <link rel="stylesheet" href="css/travel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+   
+    <section class="t-header">
+        {{>navbar}}
+        <!-- Text box Bangladesh -->
+        <div class="travel-textbox">
+            <h1>Travel </h1>
+            <p>In Bangladesh there are many renown places that attracts people.In the northern part, comprising the Rajshahi division, there are archaeological sites, including the temple city Puthia in Rajshahi.In the south-eastern part, which is the Chittagong Division, there are natural and hilly areas like Chittagong Hill Tracts, along with sandy sea beaches.In the south-western part, mainly the Khulna Division, there is the Sundarbans, the largest mangrove forest of the world with royal Bengal tiger and spotted deer. And many more....<br>To know more go to any division below and get in touch with our renown places.</p>
+        </div>
+    </section>
+
+    <!-- Division of BANGLADESH -->
+
+    <section class="division">
+        <h1>Division of BANGLADESH</h1>
+        <div class="division-row">
+            <div class="division-col">
+                <h3>DHAKA</h3>
+                <p>Dhaka is the capital city of Bangladesh, in southern Asia. Set beside the Buriganga River, it’s at the center of national government, trade and culture. The 17th-century old city was the Mughal capital of Bengal, and many palaces and mosques remain. American architect Louis Khan’s National Parliament House complex typifies the huge, fast-growing modern metropolis.</p>
+                <a href="dhaka.html"><img src="images/Lalbag_Kella_01.jpg" alt=""></a>
+            </div>
+            <div class="division-col">
+                <h3>CHATTOGRAM</h3>
+                <p>Chittagong is large port city on the southeastern coast of Bangladesh. The Ethnological Museum has exhibits about the many different ethnic tribes across the country. Zia Memorial Museum, inside the former Old Circuit House, displays items belonging to former president Ziaur Rahman, who was assassinated on the site in 1981. The landmark Chandanpura Mosque has many onion-shaped domes and brightly painted minarets.</p>
+                <a href="chattogram.html"><img src="images/chattagram.jpg" alt=""></a>
+            </div>
+            <div class="division-col">
+                <h3>RAJSHAHI</h3>
+                <p>Rajshahi is a metropolitan city and a major urban, commercial and educational centre of Bangladesh. It is also the administrative seat of the eponymous division and district. Located on the north bank of the Padma River, near the Bangladesh-India border, the city has a population of over 763,580 residents.</p>
+                <a href="rajshahi.html"><img src="images/Choto-Sona-Mosjid.jpg" alt=""></a>
+            </div>
+            <div class="division-col">
+                <h3>KHULNA</h3>
+                <p>Khulna is the third-largest city in Bangladesh, after Dhaka and Chittagong. It is the administrative centre of Khulna District and Khulna Division. Khulna's economy is the third-largest in Bangladesh, contributing $53 billion in gross state product and $95 billion in purchasing power parity in 2020.</p>
+                <a href="khulna.html"><img src="images/khulna-sundarban.jpg" alt=""></a>
+            </div>
+            <div class="division-col">
+                <h3>BARISHAL</h3>
+                <p>Barishal is a major city that lies on the banks of the Kirtankhola river in south-central Bangladesh. It is the largest city and the administrative headquarter of both Barisal District and Barisal Division. It is one of the oldest municipalities and river ports of the country.</p>
+                <a href="barishal.html"><img src="images/barishal.jpg" alt=""></a>
+            </div>
+            <div class="division-col">
+                <h3>SYLHET</h3>
+                <p>Sylhet is a city in eastern Bangladesh, on the Surma River. It’s known for its Sufi shrines, like the ornate tomb and mosque of 14th-century saint Hazrat Shah Jalal, now a major pilgrimage site near Dargah Gate. The tiny Museum of Rajas contains belongings of the local folk poet Hasan Raja. A 3-domed gateway stands at the 17th-century Shahi Eidgah, a huge open-air hilltop mosque built by Emperor Aurangzeb.</p>
+                <a href="sylhet.html"><img src="images/sylhet.jpg" alt=""></a>
+            </div>
+            <div class="division-col">
+                <h3>RANGPUR</h3>
+                <p>Rangpur is one of the major cities in Bangladesh and Rangpur Division. Rangpur was declared a district headquarters on December 16, 1769, and established as a municipality in 1869, making it one of the oldest municipalities in Bangladesh.</p>
+                <a href="rangpur.html"><img src="images/rangpur.jpg" alt=""></a>
+            </div>
+            <div class="division-col">
+                <h3>MYMENSINGH</h3>
+                <p>Mymensingh is the capital of Mymensingh Division, Bangladesh. Located on the bank of Brahmaputra River, about 120 km north of the national capital Dhaka, it is a major financial center and educational hub of north-central Bangladesh. The city was constituted by the British East India Company on 1 May,1787.</p>
+                <a href="mymensingh.html"><img src="images/mymensingh-birishiri.jpg" alt=""></a>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+
+    {{>footer}}
+<!-- JavaScript for toggle menu -->
+
+<script>
+    var Navlink = document.getElementById("Navlink");
+    function showmenu(){
+        Navlink.style.right = "0";
+    }
+    function hidemenu(){
+        Navlink.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL HERO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+   
+    <section class="header">
+         {{>navbar}}
+        <!-- Text box Bangladesh -->
+        <div class="ticket-textbox">
+            <h1>E-Ticket</h1>
+            <p>Buy tickets online easily</p>
+            
+        </div>
+    </section>
+
+    <section class="ticket">
+        <h1>Buy Online Tickets</h1>
+        <div class="ticket-row">
+            <div class="ticket-col">
+                <h3>Air</h3>
+                <a href="https://www.flightexpert.com/" target="_blank"><img src="images/air-ticket.jpg" alt="AIR"></a>
+            </div>
+            <div class="ticket-col">
+                <h3>Train</h3>
+                <a href="https://eticket.railway.gov.bd/" target="_blank"><img src="images/train.jpg" alt="TRAIN"></a>
+            </div>
+            <div class="ticket-col">
+                <h3>Bus</h3>
+                <a href="https://greenlinebd.com/" target="_blank"><img src="images/bus.jpg" alt="BUS"></a>
+            </div>
+        </div>
+    </section>
+    
+    {{>footer}}
+
+<!-- JavaScript for toggle menu -->
+
+<script>
+    var Navlink = document.getElementById("Navlink");
+    function showmenu(){
+        Navlink.style.right = "0";
+    }
+    function hidemenu(){
+        Navlink.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>

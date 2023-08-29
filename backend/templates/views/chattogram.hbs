@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chattogram</title>
+    <link rel="stylesheet" href="css/division.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+    <section class="t-header" style="background-image: url(images/ctg.jpg);">
+        {{>navbar}}
+        <!-- Text box Bangladesh -->
+        <div class="travel-textbox">
+            <h1>Chittagong</h1>
+            <p>Chittagong is the second-largest city in Bangladesh after Dhaka and third largest city in Bengal region. It hosts the busiest seaport on the Bay of Bengal.</p>
+        </div>
+    </section>
+
+    <!-- Dhaka Division -->
+
+    <section class="design">
+        <h2><b><i>Popular Places in <span style="color: rgb(190, 91, 247);">Chittagong</span></i></b></h2>
+        <div class="design-row">
+            <div class="design-col">
+                <h1><strong>Patenga Beach</strong></h1>
+                <p>Patenga Sea Beach is one of Bangladesh’s most stunning and famous beaches. Many tourists come to this beach as it is near Chittagong. Besides, several projects are being implemented to make this beach more attractive. Patenga beach, with a length of five kilometers, is being transformed into a modern tourist attraction. The spectacular decorations have already been completed and caught everyone’s attention.
+                    The sunrise or sunset view in Patenga, located in the Mohana of the Karnafuli river and the sea, is delightful. Especially in the afternoon, sunset and evening time will amaze you. </p>
+            </div>
+            <div class="design-col">
+                <img src="images/patenga.jpg">
+            </div>
+        </div>
+
+        <div class="design-row">
+            <div class="design-col">
+                <h1><strong>Chandranath Hills</strong></h1>
+                <p>Sitakundo is a place of natural beauty. It has a vast sea and Chandravanath hill, a place of pilgrimage for Hindus. Chandranath Hills is located just 4 km east of Sitakundo Bazar. You can walk or take a rickshaw from Sitakundo Bazar to get to Chandranath Hills’ lower gate.
+                    Yet, on the way to Chandranath Hills on foot, you can see several Hindu religious structures and the inhabitants’ way of life. 
+                    If you go deeper into the mountains, Shifting Cultivation and flower gardens are cultivated commercially.
+                    Chandranath Temple is situated at the top of Chandranath hills.</p>
+            </div>
+            <div class="design-col">
+                <img src="images/Chandranath-Hills.jpg">
+            </div>
+        </div>
+        
+        <div class="design-row">
+            <div class="design-col">
+                <h1><strong>Sitakundo Eco Park</strong></h1>
+                <p>Sitakundo Eco Park has located just 35 km from Chittagong city. It is currently considered an extraordinary tourist destination. 
+                    There are two beautiful fountains called Sohosro Dhara and Suptodhara.
+                    Besides, Sitakundo Eco Park has many rare species of trees. This helps botany students increase their knowledge about trees. The Botanical Garden has orchid houses with about 50 types of domestic and foreign orchids preserved.
+                    Mountains, trees, wildlife, waterfalls, and birds have enriched Eco Park. There are many other flowers, fruits, and trees.</p>
+            </div>
+            <div class="design-col">
+                <img src="images/Sitakundo-Eco-Park-.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+
+    {{>footer}}
+
+<!-- JavaScript for toggle menu -->
+
+<script>
+    var Navlink = document.getElementById("Navlink");
+    function showmenu(){
+        Navlink.style.right = "0";
+    }
+    function hidemenu(){
+        Navlink.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>

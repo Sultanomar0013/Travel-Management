@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL HERO</title>
+    <link rel="stylesheet" href="css/guide.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/1f3955d500.js" crossorigin="anonymous"></script>
+    <!-- slider script -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+</head>
+<body>
+
+    <section class="header">
+        {{>navbar}}
+
+        <!-- Text box Bangladesh -->
+
+        <div class="textbox">
+            <h1>Our Guides</h1>
+        </div>
+
+    </section>
+
+    <!-- Guide List -->
+
+    <section class="guide-list">
+        <main class="table">
+            <section class="table__header">
+                <h1>Guides List</h1>
+                <div class="input-group">
+                    <input type="search" placeholder="Search Data...">
+                    <img src="images/search.png" alt="">
+                </div>
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Id </th>
+                            <th> Name </th>
+                            <th> Location </th>
+                            <th> Language </th>
+                            <th> Contact </th>
+                            <th> Experience </th>
+                            <th> Price/Day </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 1 </td>
+                            <td> <img src="images/rahaat.jpg" alt="">Rahaat R.</td>
+                            <td> Sylhet </td>
+                            <td> English & Bangla </td>
+                            <td> 0168****468</td>
+                            <td> 2 Years </td>
+                            <td> <strong> $28.90 </strong></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><img src="images/faisal.jpg" alt=""> Faisal M. </td>
+                            <td> Chittagong </td>
+                            <td> Bangla, English & Hindi </td>
+                            <td> 0154****468</td>
+                            <td> 2 Years </td>
+                            <td> <strong>$35.50</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td><img src="images/Sonal Gharti.jpg" alt=""> Afrin </td>
+                            <td> Dhaka </td>
+                            <td> Bangla & English </td>
+                            <td> 0168****618</td>
+                            <td> 1 Year </td>
+                            <td> <strong>$10.40</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td><img src="images/sakib.jpg" alt=""> Sakib Bilshan S. </td>
+                            <td> Dhaka </td>
+                            <td> Spanish(basic), Hindi, Bengali & English </td>
+                            <td> 0184****418</td>
+                            <td> 3 Years </td>
+                            <td> <strong>$49.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 5</td>
+                            <td><img src="images/ria.jpg" alt=""> Ria Afroz </td>
+                            <td> Dhaka </td>
+                            <td> Bengali & English </td>
+                            <td>0157****509</td>
+                            <td>5 Years</td>
+                            <td> <strong>$49.99</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 6</td>
+                            <td><img src="images/milon.jpg" alt=""> Milon </td>
+                            <td> Dhaka </td>
+                            <td>Bengali, English & Korean(basic)</td>
+                            <td>0157****509</td>
+                            <td>5 Years</td>
+                            <td> <strong>$99.99</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 7</td>
+                            <td><img src="images/gopi.jpg" alt=""> Gopi M. </td>
+                            <td> Khulna </td>
+                            <td>Hindi, Bengali & English</td>
+                            <td>0157****509</td>
+                            <td>3 Years</td>
+                            <td> <strong>$39.99</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 8</td>
+                            <td><img src="images/sakib.jpg" alt=""> Sakib </td>
+                            <td> Dhaka </td>
+                            <td>Hindi, Bengali & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$14.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 9</td>
+                            <td><img src="images/russel.jpg" alt=""> Russel </td>
+                            <td> Cox's Bazar </td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>3 Years</td>
+                            <td> <strong>$49.99</strong> </td>
+                        </tr>
+    
+                        <tr>
+                            <td> 10 </td>
+                            <td> <img src="images/ziza.jpg" alt="">Ziza</td>
+                            <td> Kushtia </td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong> $28.90 </strong></td>
+                        </tr>
+                        <tr>
+                            <td> 11 </td>
+                            <td><img src="images/ayman.jpg" alt="">Ayman</td>
+                            <td>Bagerhat</td>
+                            <td>Arabic (basic), English (advanced)</td>
+                            <td>0157****509</td>
+                            <td>3 Years</td>
+                            <td> <strong>$30.50</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 12 </td>
+                            <td><img src="images/Sonal Gharti.jpg" alt="">Hanifa</td>
+                            <td> Khulna </td>
+                            <td>Bangla, English</td>
+                            <td>0157****509</td>
+                            <td>5 Years</td>
+                            <td> <strong>$40.40</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 13 </td>
+                            <td><img src="images/shipra.jpg" alt="">Shipra</td>
+                            <td> Dhaka</td>
+                            <td>Bangla, English & Hindi</td>
+                            <td>0157****509</td>
+                            <td>1 Year</td>
+                            <td> <strong>$19.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 14 </td>
+                            <td><img src="images/sihab.jpg" alt=""> Sihab</td>
+                            <td>Dohar</td>
+                            <td>Basic Japaneese, Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$39.99</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 15 </td>
+                            <td><img src="images/shameema.jpg" alt="">Shameema</td>
+                            <td>Bhola</td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$39.99</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 16 </td>
+                            <td><img src="images/tuhin.jpg" alt="">Tuhin</td>
+                            <td>Bandarban</td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$29.99</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 17 </td>
+                            <td><img src="images/Sarita Limbu.jpg" alt=""> Aayat Ali Khan </td>
+                            <td>Bhairab</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$49.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 18 </td>
+                            <td><img src="images/obaidul.jpg" alt="">Obaidul H.</td>
+                            <td>Cumilla</td>
+                            <td>Hindi(conversational), Arabic(basic),</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$49.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 19 </td>
+                            <td><img src="images/borhan.jpg" alt="">Borhan U.</td>
+                            <td>Mymensing</td>
+                            <td>Hindi (advanced)</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$49.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 20 </td>
+                            <td><img src="images/messbaul.jpg" alt="">Messbaul A.</td>
+                            <td>Chattogram</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$25.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 21 </td>
+                            <td><img src="images/arafat.jpg" alt="">Arafat R.</td>
+                            <td>Chattogram</td>
+                            <td>Fluent in Bangla, English & Hindi</td>
+                            <td>0157****509</td>
+                            <td>3 Years</td>
+                            <td> <strong>$49.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 22 </td>
+                            <td><img src="images/shohidul.jpg" alt="">Shohidul</td>
+                            <td>Chattogram</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$49.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 23 </td>
+                            <td><img src="images/aysha.jpg" alt="">Aysha</td>
+                            <td>Sajek</td>
+                            <td>Fluent in Bangla, English & Hindi</td>
+                            <td>0157****509</td>
+                            <td>5 Years</td>
+                            <td> <strong>$135</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 24 </td>
+                            <td><img src="images/najifa.jpg" alt="">Najifa</td>
+                            <td>Ponchogor</td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$29.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 25 </td>
+                            <td><img src="images/jarin.jpg" alt="">Jarin</td>
+                            <td>Pabna</td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$28</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 26 </td>
+                            <td><img src="images/nafisa.jpg" alt="">Nafisa</td>
+                            <td>Dhaka</td>
+                            <td>Bangla & English (advanced)</td>
+                            <td>0157****509</td>
+                            <td>1 Year</td>
+                            <td> <strong>$9.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 27 </td>
+                            <td><img src="images/nira.jpg" alt="">Nira</td>
+                            <td>Dhaka</td>
+                            <td>Basic Arabic</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$60.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 28 </td>
+                            <td><img src="images/abdus.jpg" alt="">Abdus</td>
+                            <td>Chattogram</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>6 Years</td>
+                            <td> <strong>$211.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 29 </td>
+                            <td><img src="images/pushpita.jpg" alt="">Pushpita</td>
+                            <td>Rangamati</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>3 Years</td>
+                            <td> <strong>$26.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 30 </td>
+                            <td><img src="images/sathi.jpg" alt="">Sathi</td>
+                            <td>Rangamati</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$149.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 31 </td>
+                            <td><img src="images/medha.jpg" alt="">Medha</td>
+                            <td>Cox's Bazar</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$40</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 32 </td>
+                            <td><img src="images/anika.jpg" alt="">Anika</td>
+                            <td>Sylhet</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$49.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 33 </td>
+                            <td><img src="images/mrittika.jpg" alt="">Mrittika</td>
+                            <td>Sajek</td>
+                            <td>Fluent in Bangla, English & Hindi</td>
+                            <td>0157****509</td>
+                            <td>5 Years</td>
+                            <td> <strong>$135</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 34 </td>
+                            <td><img src="images/nawshad.jpg" alt="">Nawshad</td>
+                            <td>Ponchogor</td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$29.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 35 </td>
+                            <td><img src="images/sahi.jpg" alt="">Sahi</td>
+                            <td>Pabna</td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$28</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 36 </td>
+                            <td><img src="images/mirza.jpg" alt="">Mirza</td>
+                            <td>Dhaka</td>
+                            <td>Bangla & English (advanced)</td>
+                            <td>0157****509</td>
+                            <td>1 Year</td>
+                            <td> <strong>$9.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 37 </td>
+                            <td><img src="images/Asraful.jpg" alt="">Asraful</td>
+                            <td>Jessore</td>
+                            <td>Basic Arabic</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$60.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 38 </td>
+                            <td><img src="images/sanjida.jpg" alt="">Sanjida</td>
+                            <td>Chattogram</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>6 Years</td>
+                            <td> <strong>$211.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 39 </td>
+                            <td><img src="images/pushpita.jpg" alt="">Pushpita</td>
+                            <td>Rangamati</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>3 Years</td>
+                            <td> <strong>$26.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 40 </td>
+                            <td><img src="images/sathi.jpg" alt="">Sathi</td>
+                            <td>Rangamati</td>
+                            <td>Bangla, English & Hindi</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$149.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 41 </td>
+                            <td><img src="images/arifur.jpg" alt="">Arifur</td>
+                            <td>Sonargaon</td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$160</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 42 </td>
+                            <td><img src="images/mahin.jpg" alt="">Mahin</td>
+                            <td>Chittagong</td>
+                            <td>Fluent in Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$49.70</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 43 </td>
+                            <td><img src="images/nova.jpg" alt="">Nova</td>
+                            <td>Mymensing</td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$160</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 44 </td>
+                            <td><img src="images/farzana.jpg" alt="">Farzana</td>
+                            <td>Sylhet</td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$60</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 45 </td>
+                            <td><img src="images/arnisha.jpg" alt="">Arnisha</td>
+                            <td>Barishal</td>
+                            <td>Bangla & English</td>
+                            <td>0157****509</td>
+                            <td>1 Year</td>
+                            <td> <strong>$14.80</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 46 </td>
+                            <td><img src="images/hasanul.jpg" alt="">Hasanul B.</td>
+                            <td>Cox's Bazar</td>
+                            <td>Fluent with English and Hindi</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$160</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 47 </td>
+                            <td><img src="images/yasin.jpg" alt="">Yasin</td>
+                            <td>Bandarban</td>
+                            <td>Bengali, English, Hindi, Urdu</td>
+                            <td>0157****509</td>
+                            <td>7 Years</td>
+                            <td> <strong>$240</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 48 </td>
+                            <td><img src="images/omar.jpg" alt="">Omar</td>
+                            <td>Pabna</td>
+                            <td>English, Bengali</td>
+                            <td>0157****509</td>
+                            <td>4 Years</td>
+                            <td> <strong>$160</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 49 </td>
+                            <td><img src="images/shahariar.jpg" alt="">Shahariar</td>
+                            <td>Rajshahi</td>
+                            <td>English, Hindi</td>
+                            <td>0157****509</td>
+                            <td>2 Years</td>
+                            <td> <strong>$60</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 50 </td>
+                            <td><img src="images/sumaia.jpg" alt="">Sumaia</td>
+                            <td>Rajshahi</td>
+                            <td>English, Hindi, Urdu, Bengali</td>
+                            <td>0157****509</td>
+                            <td>1 Year</td>
+                            <td> <strong>$14.80</strong> </td>
+                        </tr>
+                        
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </section>
+    
+    <!-- Javascript for guide search -->
+
+    <script src="js/guide.js"></script>
+
+    <!-- footer -->
+
+   {{>footer}}
+
+    <!-- JavaScript for toggle menu -->
+
+    <script>
+        var Navlink = document.getElementById("Navlink");
+        function showmenu(){
+            Navlink.style.right = "0";
+        }
+        function hidemenu(){
+            Navlink.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

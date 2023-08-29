@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/1f3955d500.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   
+    <section class="header">
+         {{>navbar}}
+        <!-- Text box Bangladesh -->
+        <div class="textbox">
+            <h1>About</h1>
+            <!-- <p>Bangladesh, to the east of India on the Bay of Bengal, is a South Asian country marked by lush greenery and many waterways.Its Padma (Ganges), Meghna and Jamuna rivers create fertile plains, and travel by boat is common.On the southern coast, the Sundarbans, an enormous mangrove forest shared with Eastern India, is home to the royal Bengal tiger.
+                <br><a href="about.html" class="hero-btn">Visit Us To Know More</a>
+            </p> -->
+            
+        </div>
+    </section>
+
+    <!-- Contact us -->
+
+    <section class="contact">
+        <form action="contact.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <h3>Contact Us</h3>
+            <input type="text" id="name" name="name" placeholder="Name"><br>
+
+            <input type="email" id="email" name="email" placeholder="Email"><br>
+
+            <input type="tel" id="mobile" name="mobile" placeholder="Mobile"><br>
+
+            <Textarea id="textarea" placeholder="Write your message here..." rows="3"></Textarea>
+
+            <button type="submit">Send message</button>
+        </form>
+    </section>
+
+
+    <!-- footer -->
+
+    {{>footer}}
+
+    <!-- Javascript for form validation -->
+
+    <script>
+		function validateForm() {
+			var name = document.forms["myForm"]["name"].value;
+			var email = document.forms["myForm"]["email"].value;
+			var mobile = document.forms["myForm"]["mobile"].value;
+
+			if (name == "") {
+				alert("Name must be filled out");
+				return false;
+			}
+
+			if (email == "") {
+				alert("Email must be filled out");
+				return false;
+			}
+
+			if (!validateEmail(email)) {
+				alert("Invalid email address");
+				return false;
+			}
+
+			if (mobile == "") {
+				alert("Mobile number must be filled out");
+				return false;
+			}
+
+			if (!validateMobile(mobile)) {
+				alert("Invalid mobile number");
+				return false;
+			}
+
+			return true;
+		}
+
+		function validateEmail(email) {
+			var re = /\S+@\S+\.\S+/;
+			return re.test(email);
+		}
+
+		function validateMobile(mobile) {
+			var re = /^\d{11}$/;
+			return re.test(mobile);
+		}
+	</script>
+
+     <!-- Javascript for getting form data in email -->
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+                    function sendEmail(){
+                        Email.send({
+                Host : "smtp.gmail.com",
+                Username : "alisfabricszone@gmail.com",
+                Password : "nokib1415",
+                To : 'darazexan@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Contact messages",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script> -->
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var Navlink = document.getElementById("Navlink");
+        function showmenu(){
+            Navlink.style.right = "0";
+        }
+        function hidemenu(){
+            Navlink.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

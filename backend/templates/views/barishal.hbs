@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barishal</title>
+    <link rel="stylesheet" href="css/division.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+    <section class="t-header" style="background-image: url(images/barishal.jpg);">
+        {{>navbar}}
+        <!-- Text box Bangladesh -->
+        <div class="travel-textbox">
+            <h1>Barishal</h1>
+            <p>Barishal s a major city that lies on the banks of the Kirtankhola river in south-central Bangladesh. It is the largest city and the administrative headquarter of both Barisal District[b] and Barisal Division. It is one of the oldest municipalities and river ports of the country. The city was once called the Venice of the East or the Venice of Bengal.</p>
+        </div>
+    </section>
+
+    <!-- Dhaka Division -->
+
+    <section class="design">
+        <h2><b><i>Popular Places in <span style="color: rgb(190, 91, 247);">Barishal</span></i></b></h2>
+        <div class="design-row">
+            <div class="design-col">
+                <h1><strong>Lalbag Fort</strong></h1>
+                <p>Lalbagh Fort (Bengali: লালবাগ কেল্লা) is a fort in the old city of Dhaka, Bangladesh. Its name is derived from its neighborhood Lalbagh, which means Red Garden. The term Lalbagh refers to reddish and pinkish architecture from the Mughal period. The original fort was called Fort Aurangabad.<br>It is located in the southern portion of the city which is called Dhaka south city. It is a well-preserved archeological structure that was built in the seventh century. A lot of people visit the place and enjoy the traditional food from Puran Dhaka nearby.</p>
+            </div>
+            <div class="design-col">
+                <img src="images/lalbag-fort.jpg" alt="lalbag-fort">
+            </div>
+        </div>
+
+        <div class="design-row">
+            <div class="design-col">
+                <h1><strong>Ahsan Manzil</strong></h1>
+                <p>Ahsan Manzil is a palace located in the Kumartoli area of Dhaka, Bangladesh. It was formerly the residence and seat of the Nawab of Dhaka and has been designated an Old Dhaka Heritage Site. It now serves as a museum. <br>If you want to have a look at the architectural beauty of Dhaka, Ahsan Manzil is a place for you to visit.</p>
+            </div>
+            <div class="design-col">
+                <img src="images/ahsan-monjil.jpg" alt="ahsan-manjil">
+            </div>
+        </div>
+        
+        <div class="design-row">
+            <div class="design-col">
+                <h1><strong>Sonargaon Panam City</strong></h1>
+                <p>Panam City (Bengali: পানাম নগর;) was an ancient city, the archaeological ruins of which is situated at Sonargaon, Narayanganj in Bangladesh. It is one of the earliest cities in Bangladesh that is still standing. <br>Among the three cities of the time period: Boro nagar (Big City), Khas Nagar and Panam Nagar; Panam Nagar was the most attractive one. The city area which covers roughly 20 square kilometres (7.7 sq mi), consists of several historical buildings built centuries ago connected with the history of Baro-Bhuyan. Reportedly, this is one of the most visited tourist spots in Bangladesh.</p>
+            </div>
+            <div class="design-col">
+                <img src="images/panamcity.jpg" alt="panamcity">
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+
+    {{>footer}}
+
+<!-- JavaScript for toggle menu -->
+
+<script>
+    var Navlink = document.getElementById("Navlink");
+    function showmenu(){
+        Navlink.style.right = "0";
+    }
+    function hidemenu(){
+        Navlink.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
