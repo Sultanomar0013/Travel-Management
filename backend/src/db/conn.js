@@ -3,7 +3,7 @@ const http = require('http').Server(app);
 
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://sultanomar:1234@travel.j6o0tig.mongodb.net/TravelManagement?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGODB_URL)
 .then(() => {
     console.log(`Connection successful`);
 }).catch((e) => {
