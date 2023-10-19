@@ -1,12 +1,10 @@
+require ('dotenv').config();
 const express = require("express");
 const path = require("path");
 const app = express();
-
-
 const hbs = require("hbs");
 const bcrypt = require("bcrypt");
 require("./db/conn");
-require ('dotenv').config();
 const User = require("./models/signup");
 const { json } = require("express");
 const session = require('express-session');
